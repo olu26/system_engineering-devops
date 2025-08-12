@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script loops from 1 to 10 and prints special messages for 4 and 8, "Best School" otherwise
+# This script prints special messages for 4th and 8th iterations using if-elif-else
 
 i=1
 while [ $i -le 10 ]

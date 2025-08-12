@@ -3,7 +3,8 @@
 
 for file in *; do
   # Skip hidden files
-  if [[ "$file" != -* && "$file" != .* ]]; then
+  if [[ "$file" != .* ]]; then
     echo "${file#*-}"
   fi
 done
+

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script prints "Best School" 10 times and "Hi" after the 9th iteration using while and if
+# This script prints "Best School" 10 times using a while loop and says "Hi" on the 9th iteration
 
 i=1
 while [ $i -le 10 ]
@@ -10,3 +10,4 @@ do
   fi
   i=$((i + 1))
 done
+

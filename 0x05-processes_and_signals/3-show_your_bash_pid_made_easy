@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-# A Bash script that displays the PID and process name of all processes containing "bash"
+# This script lists PID and name for exact “bash” processes, excluding itself
 
-pgrep -l bash
+# loop over exact matches for “bash”
+for pid in $(pgrep -x bash); do
+  # skip the PID of this running script
+  if [ "$pid" -ne "$$" ]; then
+    echo "$pid bash"
+  fi
+done
